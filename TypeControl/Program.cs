@@ -10,7 +10,7 @@ namespace TypeControl
 {
     class Program
     {
-        static async Task Main(string[] args)
+        static void Main(string[] args)
         {
             var cs = new ControlService();
             cs.Program = new List<Stage>
@@ -28,7 +28,7 @@ namespace TypeControl
                     new MotorPositionState(10)
                 }
             };
-            await cs.RunAsync();
+            cs.RunAsync().GetAwaiter().GetResult();
         }
     }
 }
