@@ -13,7 +13,8 @@ namespace TypeControl
         {
             var actuators = new List<IActuator>
             {
-                new Actuators.MotorPositionActuator()
+                new Actuators.HorizontalPositionActuator(),
+                new Actuators.VerticalPositionActuator()
             };
             Actuators = actuators.OrderBy(a => a.Priority).ToList();
         }

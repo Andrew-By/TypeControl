@@ -43,11 +43,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Actuators\MotorPositionActuator.cs" />
+    <Compile Include="Actuators\HorizontalPositionActuator.cs" />
+    <Compile Include="Actuators\VerticalPositionActuator.cs" />
     <Compile Include="ControlService.cs" />
+    <Compile Include="Enums\HorizontalPosition.cs" />
+    <Compile Include="Enums\VerticalPosition.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="States\MotorPositionState.cs" />
+    <Compile Include="States\HorizontalPositionState.cs" />
+    <Compile Include="States\VerticalPositionState.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -58,5 +62,6 @@
       <Name>Service</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

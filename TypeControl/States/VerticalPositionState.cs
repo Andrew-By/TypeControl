@@ -5,11 +5,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using TypeControl.Actuators;
+using TypeControl.Enums;
 
 namespace TypeControl.States
 {
-    public class MotorPositionState : StateBase<MotorPositionActuator, int>
+    public class VerticalPositionState : StateBase<VerticalPositionActuator, VerticalPosition>
     {
-        public MotorPositionState(int state) : base(state) { }
+        public VerticalPositionState(VerticalPosition state) : base(state) { }
     }
 }
