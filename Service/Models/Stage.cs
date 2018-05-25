@@ -1,11 +1,11 @@
-﻿using System;
+﻿using Service.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using TypeControl.Interfaces;
 
-namespace TypeControl.Models
+namespace Service.Models
 {
     public class Stage : List<IState> { }
 }

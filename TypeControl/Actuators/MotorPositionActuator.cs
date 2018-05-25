@@ -1,10 +1,9 @@
-﻿using System;
+﻿using Service.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using TypeControl.Models;
-
 namespace TypeControl.Actuators
 {
     public class MotorPositionActuator : ActuatorBase<int>
@@ -16,10 +15,10 @@ namespace TypeControl.Actuators
 
         public override async Task ChangeStateAsync(int state)
         {
-            Console.WriteLine($"Едем в положение {state}...");
+            Console.WriteLine($"Moving to position {state}...");
             await Task.Delay(TimeSpan.FromSeconds(3));
             _state = state;
-            Console.WriteLine($"Приехали в положение {state}...");
+            Console.WriteLine($"Got to position {state}");
         }
     }
 }
